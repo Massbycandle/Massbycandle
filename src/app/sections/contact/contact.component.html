@@ -1,0 +1,54 @@
+<app-title titleText="Kontakt" secondaryText="Znajdź Nas"></app-title>
+<div class="contact-content">
+    <div class="contact-text">
+        <p>
+            Szybki zakup kilku sztuk świec sojowych? Zajrzyj na allegro!
+        </p>
+    </div>
+    <div class="contact-icon clickable" (click)="openSite(allegroPage)">
+        <p>
+            <fa-icon class="icon fa-3x" [icon]="faShop"></fa-icon>
+        </p>
+        <div class="text">@massby_candle</div>
+    </div>
+</div>
+
+<div class="contact-content">
+    <div class="contact-text">
+        <p>
+            Chcesz nasz obserwowac? Znajdziesz Nas na Facebooku oraz Instagramie!
+        </p>
+    </div>
+    <div class="contact-icon clickable" (click)="openSite(facebookPage)">
+        <p>
+            <fa-icon class="icon fa-3x" [icon]="faFacebook"></fa-icon>
+        </p>
+        <div class="text">@Massby - Świece Sojowe</div>
+    </div>
+    <div class="contact-icon clickable" (click)="openSite(instagramPage)">
+        <p>
+            <fa-icon class="icon fa-3x" [icon]="faInstagram"></fa-icon>
+        </p>
+        <div class="text">@massby_candle</div>
+    </div>
+</div>
+
+<div class="contact-content">
+    <div class="contact-text">
+        <p>
+            Jeźeli planujesz zakup wiekszej ilości świec, skontaktuj się z nami mailowo lub telefonicznie.
+        </p>
+    </div>
+    <div class="contact-icon">
+        <p>
+            <fa-icon class="icon fa-3x" [icon]="faPhone"></fa-icon>
+        </p>
+        <div class="text">+48 888-672-244</div>
+    </div>
+    <div class="contact-icon clickable" (click)="sendEmail()">
+        <p>
+            <fa-icon class="icon fa-3x" [icon]="faEnvelope"></fa-icon>
+        </p>
+        <div class="text">massbycandle@gmail.com</div>
+    </div>
+</div>

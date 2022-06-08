@@ -1,0 +1,23 @@
+.slide img {
+    height    : 650px;
+    object-fit: cover;
+
+}
+
+@media (max-width: 870px) {
+    .slide img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 550px) {
+    .slide img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .slide img {
+        height: 300px;
+    }
+}

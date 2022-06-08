@@ -1,0 +1,209 @@
+@import "../shared/__colors.scss";
+
+section {
+    padding: 50px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding  : 0 80px;
+    margin   : auto;
+}
+
+.navbar {
+    position   : fixed;
+    width      : 100%;
+    z-index    : 9999;
+    padding    : 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition : all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding   : 5px 0;
+    background: $navbar-color;
+}
+
+.navbar .max-width {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height    : 100px;
+    object-fit: cover;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display   : inline-block;
+}
+
+.active-section {
+    transform      : scale(1.2);
+    font-weight    : bold;
+    text-decoration: underline;
+}
+
+.navbar .menu li a {
+    display    : block;
+    color      : $main-color;
+    font-size  : 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition : color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: $hover-color;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: $hover-color;
+}
+
+.menu-btn {
+    color    : $main-color;
+    font-size: 23px;
+    cursor   : pointer;
+    display  : none;
+}
+
+.scroll-up-btn {
+    position           : fixed;
+    height             : 45px;
+    width              : 42px;
+    background         : $secondary-color;
+    right              : 30px;
+    bottom             : 10px;
+    text-align         : center;
+    line-height        : 45px;
+    color              : $main-color;
+    z-index            : 9000;
+    font-size          : 30px;
+    border-radius      : 6px;
+    border-bottom-width: 2px;
+    cursor             : pointer;
+    opacity            : 0;
+    pointer-events     : none;
+    transition         : all 0.3s ease;
+}
+
+.scroll-up-btn a {
+    color: $main-color;
+}
+
+.scroll-up-btn.show {
+    bottom        : 30px;
+    opacity       : 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+.home {
+    display              : flex;
+    background           : url("../../assets/images/main.jpg") no-repeat center;
+    height               : 100vh;
+    color                : $main-color;
+    min-height           : 500px;
+    background-size      : cover;
+    background-attachment: fixed;
+    font-family          : 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    width  : 100%;
+    display: flex;
+}
+
+footer {
+    background: $navbar-color;
+    padding   : 15px 23px;
+    color     : $main-color;
+    text-align: center;
+}
+
+footer span a {
+    color          : $navbar-color;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 9999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position   : fixed;
+        height     : 100vh;
+        width      : 100%;
+        left       : -100%;
+        top        : 0;
+        background : $navbar-color;
+        text-align : center;
+        padding-top: 80px;
+        transition : all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display  : inline-block;
+        margin   : 20px 0;
+        font-size: 25px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .navbar .logo img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 10px 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn {
+        right      : 15px;
+        bottom     : 15px;
+        height     : 38px;
+        width      : 35px;
+        font-size  : 23px;
+        line-height: 38px;
+    }
+
+    .navbar .logo img {
+        height: 50px;
+    }
+}

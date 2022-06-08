@@ -1,0 +1,86 @@
+@import '../../../shared/__colors.scss';
+
+.card {
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.image-container {
+    position  : relative;
+    object-fit: scale-down;
+}
+
+.image-container:hover .overlay-icon {
+    z-index: 1100;
+}
+
+.overlay-icon {
+    color            : white;
+    position         : absolute;
+    top              : 50%;
+    left             : 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform    : translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+}
+
+.about-card-container {
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2,
+h3 {
+    color        : $hover-color;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p.link:hover {
+    cursor   : pointer;
+    color    : $hover-color;
+    transform: scale(1.05);
+}
+
+p.disabled-link {
+    color: $secondary-color;
+}
+
+@media (max-width: 1250px) {
+    li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1150px) {
+    li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1010px) {
+    li {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        font-size: 12px;
+    }
+}

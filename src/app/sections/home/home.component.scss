@@ -1,0 +1,74 @@
+@import '../../shared/__colors.scss';
+
+.home-content .text-main {
+    font-size  : 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home-content .text-secondary {
+    font-size: 40px;
+    margin   : 5px 0;
+}
+
+.home-content .text-secondary span {
+    color      : $navbar-color;
+    font-weight: 500;
+}
+
+.home-content a {
+    display         : inline-block;
+    color           : $main-color;
+    background-color: $navbar-color;
+    font-size       : 25px;
+    padding         : 12px 36px;
+    margin-top      : 20px;
+    font-weight     : 400;
+    border-radius   : 6px;
+    border          : 2px solid $main-color;
+    transition      : all 0.3s ease;
+}
+
+.home-content a:hover {
+    transform : scale(1.05);
+    background: $hover-color;
+}
+
+@media (max-width: 947px) {
+    .home-content .text-2 {
+        font-size: 70px;
+    }
+
+    .home-content .text-3 {
+        font-size: 35px;
+    }
+
+    .home-content a {
+        font-size: 23px;
+        padding  : 10px 30px;
+    }
+}
+
+@media (max-width: 690px) {
+    .home-content .text-main {
+        font-size: 60px;
+    }
+
+    .home-content .text-secondary {
+        font-size: 32px;
+    }
+
+    .home-content a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-content .text-main {
+        font-size: 50px;
+    }
+
+    .home-content .text-secondary {
+        font-size: 27px;
+    }
+}

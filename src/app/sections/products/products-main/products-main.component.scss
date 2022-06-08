@@ -1,0 +1,29 @@
+@import '../../../shared/__colors.scss';
+
+.product-content {
+    font-family    : 'Poppins', sans-serif;
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: space-between;
+    justify-content: left !important;
+}
+
+.card {
+    width        : calc(50% - 15px);
+    text-align   : center;
+    border-radius: 20px;
+    border-style : solid;
+    border-width : 2px;
+    border-color : $navbar-color;
+    margin-bottom: 20px;
+    margin-right : 10px;
+    transition   : all 0.3s ease;
+    align-self   : normal;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+}
