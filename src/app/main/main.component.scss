@@ -106,7 +106,7 @@ section {
 
 .home {
     display              : flex;
-    background           : url("../../assets/images/main.jpg") no-repeat center;
+    // background           : url("../../assets/images/main.jpg") no-repeat center;
     height               : 100vh;
     color                : $main-color;
     min-height           : 500px;
@@ -187,7 +187,7 @@ footer span a:hover {
     }
 
     .home {
-        background: url("../../assets/images/mobile/main.jpg") no-repeat center;
+        // background: url("../../assets/images/mobile/main.jpg") no-repeat center;
     }
 }
 
