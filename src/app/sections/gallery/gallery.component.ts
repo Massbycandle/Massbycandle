@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { NgxGalleryAnimation, NgxGalleryImage, NgxGalleryImageSize, NgxGalleryOptions } from 'ngx-gallery-9';
+import { MobileService } from 'src/app/service/mobile.service';
 import { CandleService } from '../../service/candle.service';
 
 @Component({
@@ -13,10 +14,14 @@ export class GalleryComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[] = [];
   galleryImages: NgxGalleryImage[] = [];
 
+  private isMobile: boolean = true;
+
   constructor(private readonly _candleService: CandleService,
-    private readonly deviceService: DeviceDetectorService) { }
+    private readonly mobileService: MobileService) {
+  }
 
   ngOnInit(): void {
+    this.isMobile = this.mobileService.isMobile();
     this.galleryOptions = [
       {
         imageAutoPlay: true,
@@ -42,8 +47,8 @@ export class GalleryComponent implements OnInit {
     const mobileImageUrls = this._candleService.galery.map(imageName => "assets/images/mobile/gallery/" + imageName);
     imageUrls.forEach((imageUrl, index) => {
       const entry = {
-        medium: this.deviceService.isMobile() ? mobileImageUrls[index] : imageUrl,
-        big: imageUrl
+        medium: this.isMobile ? mobileImageUrls[index] : imageUrl,
+        big: this.isMobile ? mobileImageUrls[index] : imageUrl
       }
       this.galleryImages.push(entry);
     })

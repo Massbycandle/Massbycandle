@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChil
 
 import { faAngleUp, faBars, faCopyright } from '@fortawesome/free-solid-svg-icons';
 
-import { DeviceDetectorService } from 'ngx-device-detector';
+import { MobileService } from '../service/mobile.service';
 
 @Component({
   selector: 'app-main',
@@ -25,10 +25,10 @@ export class MainComponent implements AfterViewInit {
 
   activeSectionId: string = '';
 
-  constructor(private readonly deviceService: DeviceDetectorService) { }
+  constructor(private readonly mobileService: MobileService) { }
 
   isMobile(): boolean {
-    return this.deviceService.isMobile()
+    return this.mobileService.isMobile()
   }
 
   ngAfterViewInit(): void {
