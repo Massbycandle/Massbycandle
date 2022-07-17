@@ -1,7 +1,7 @@
 <app-title [titleText]="title" [secondaryText]="secondaryTitle"></app-title>
 <div class="about-content">
     <div class="column left">
-        <img [src]="imageUrl" [alt]="imageAlt">
+        <img [src]="imageUrl" loading="lazy" [alt]="imageAlt">
     </div>
     <div class="column right">
         <div class="text">{{titleInnerHtml}}</div>
