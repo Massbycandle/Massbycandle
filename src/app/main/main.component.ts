@@ -22,7 +22,6 @@ export class MainComponent implements AfterViewInit {
   @ViewChild('gallery', { read: ElementRef }) gallerySection!: ElementRef;
   @ViewChild('products', { read: ElementRef }) productsSection!: ElementRef;
   @ViewChild('contact', { read: ElementRef }) contactSection!: ElementRef;
-  @ViewChild('home', { read: ElementRef }) homeSection!: ElementRef;
 
   activeSectionId: string = '';
 
