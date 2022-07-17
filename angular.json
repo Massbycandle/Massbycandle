@@ -23,6 +23,7 @@
             "outputPath": "dist/massby-candle-store",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "aot": true,
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
