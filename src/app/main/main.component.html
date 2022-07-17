@@ -14,7 +14,7 @@
       <li><a id="contact_nav" href="#contact" class="menu-btn" (click)="onSectionSelect()">Kontakt</a></li>
     </ul>
     <div class="menu-btn">
-      <fa-icon (click)="toogleMenu()" id="menu-hamburger" [icon]="faBars"></fa-icon>
+      <fa-icon (click)="toogleMenu()" id="menu-hamburger" [icon]="menuActive ? faXmark : faBars"></fa-icon>
     </div>
   </div>
 </nav>

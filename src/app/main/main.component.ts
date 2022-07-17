@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 
-import { faAngleUp, faBars, faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faBars, faXmark, faCopyright } from '@fortawesome/free-solid-svg-icons';
 
 import { MobileService } from '../service/mobile.service';
 
@@ -15,6 +15,9 @@ export class MainComponent implements AfterViewInit {
   faAngleUp = faAngleUp
   faBars = faBars
   faCopyright = faCopyright
+  faXmark = faXmark
+
+  menuActive: boolean = false;
 
   //sections
   @ViewChild('about_massby', { read: ElementRef }) aboutMassbySection!: ElementRef;
@@ -74,9 +77,8 @@ export class MainComponent implements AfterViewInit {
 
   onSectionSelect() {
     var navbarMenuItems = document.getElementById('navbar-menu-items');
-    var menuHamburgerBtn = document.getElementById('menu-hamburger')
     navbarMenuItems?.classList.remove('active');
-    menuHamburgerBtn?.classList.remove('active');
+    this.menuActive = false;
     window.scroll({ behavior: 'smooth' })
   }
 
@@ -84,7 +86,7 @@ export class MainComponent implements AfterViewInit {
     var navbarMenuItems = document.getElementById('navbar-menu-items');
     var menuHamburgerBtn = document.getElementById('menu-hamburger')
     navbarMenuItems?.classList.toggle('active');
-    menuHamburgerBtn?.classList.toggle('active');
+    this.menuActive = !this.menuActive;
   }
 
   private setActive(activeElemId: string) {
