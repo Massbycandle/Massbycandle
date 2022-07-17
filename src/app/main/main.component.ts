@@ -1,11 +1,14 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 
 import { faAngleUp, faBars, faCopyright } from '@fortawesome/free-solid-svg-icons';
+
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MainComponent implements AfterViewInit {
 
@@ -19,11 +22,17 @@ export class MainComponent implements AfterViewInit {
   @ViewChild('gallery', { read: ElementRef }) gallerySection!: ElementRef;
   @ViewChild('products', { read: ElementRef }) productsSection!: ElementRef;
   @ViewChild('contact', { read: ElementRef }) contactSection!: ElementRef;
+  @ViewChild('home', { read: ElementRef }) homeSection!: ElementRef;
 
   activeSectionId: string = '';
 
-  ngAfterViewInit(): void {
+  constructor(private readonly deviceService: DeviceDetectorService) { }
 
+  isMobile(): boolean {
+    return this.deviceService.isMobile()
+  }
+
+  ngAfterViewInit(): void {
     const allSections = [this.aboutMassbySection, this.aboutCandlesSection, this.gallerySection, this.productsSection, this.contactSection];
     document.addEventListener('scroll', () => {
       const navBar = document.getElementById('navbar');

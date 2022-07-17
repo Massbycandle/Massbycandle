@@ -5,7 +5,7 @@
 </div>
 <nav id="navbar" class="navbar">
   <div class="max-width">
-    <div class="logo"><a href="#home"><img src="../../assets/images/logo.png"></a></div>
+    <div class="logo"><a href="#home"><img src="assets/images/logo.png" alt="Massby Candle logo"></a></div>
     <ul class="menu" id="navbar-menu-items">
       <li><a id="about_massby_nav" href="#about_massby" class="menu-btn" (click)="onSectionSelect()">Massby</a></li>
       <li><a id="about_candles_nav" href="#about_candles" class="menu-btn" (click)="onSectionSelect()">Nasze Świece</a></li>
@@ -27,7 +27,7 @@
 
 <section #about_massby class="about" id="about_massby">
   <div class="max-width">
-    <app-about title="Massby" secondaryTitle="Poznaj Nas" imageUrl="../../assets/images/section1.jpg"
+    <app-about title="Massby" secondaryTitle="Poznaj Nas" [imageUrl]="isMobile() ? 'assets/images/mobile/section1.jpg' : 'assets/images/section1.jpg'" imageAlt="Obrazek świec sojowych Massby Candle dla pierwszej sekcji"
       titleInnerHtml="Dlaczego Massby Candles?" contentComponentName="about-massby">
     </app-about>
   </div>
@@ -35,9 +35,12 @@
 
 <section #about_candles class="about" id="about_candles">
   <div class="max-width">
-    <app-about title="Nasze Świece" secondaryTitle="Świece Sojowe" imageUrl="../../assets/images/section2.jpg"
+    <app-about title="Nasze Świece" secondaryTitle="Świece Sojowe" [imageUrl]="isMobile() ? 'assets/images/mobile/section2.jpg' : 'assets/images/section2.jpg'" imageAlt="Obrazek świec sojowych Massby Candle dla pierwszej sekcji"
       titleInnerHtml="Dlaczego świece sojowe?" contentComponentName="about-candles">
     </app-about>
+  </div>
+  <div class="max-width">
+  
   </div>
 </section>
 

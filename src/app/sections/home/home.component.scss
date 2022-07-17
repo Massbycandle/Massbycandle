@@ -72,3 +72,13 @@
         font-size: 27px;
     }
 }
+
+@media (max-width: 400px) {
+    .home-content .text-main {
+        font-size: 40px;
+    }
+
+    .home-content .text-secondary {
+        font-size: 24px;
+    }
+}
