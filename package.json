@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build.heroku": "ng build --environment=prod && tar -zcvf archive.tar.gz dist/**/*",
-    "heroku-postbuild": "ng build.heroku"
+    "heroku-postbuild": "ng build --environment=prod && tar -zcvf archive.tar.gz dist/**/*"
   },
   "engines": {
     "node": "14.15.4",
