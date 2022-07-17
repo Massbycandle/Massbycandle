@@ -35,10 +35,11 @@ ul {
     list-style-type: none;
 }
 
-h2,
-h3 {
+.name,
+.variants-text {
     color        : $hover-color;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 li {

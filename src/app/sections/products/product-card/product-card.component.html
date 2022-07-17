@@ -6,11 +6,11 @@
                 <fa-icon class="icon fa-3x" [icon]="faSearch"></fa-icon>
             </div>
         </div>
-        <h2>{{candle.name}}</h2>
+        <p class="name">{{candle.name}}</p>
         <p>{{candle.description}}</p>
     </div>
     <div class="variants">
-        <h3>Poznaj warianty naszych świec</h3>
+        <p class="variants-text">Poznaj warianty naszych świec</p>
         <ul>
             <li *ngFor="let variant of candle.variants">
                 <p [ngClass]="{
