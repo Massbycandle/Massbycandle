@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DeviceDetectorService } from 'ngx-device-detector';
 import { NgxGalleryAnimation, NgxGalleryImage, NgxGalleryImageSize, NgxGalleryOptions } from 'ngx-gallery-9';
 import { MobileService } from 'src/app/service/mobile.service';
 import { CandleService } from '../../service/candle.service';

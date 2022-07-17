@@ -18,8 +18,6 @@ export class ProductCardComponent implements OnInit {
 
   faSearch = faSearch
 
-  constructor() { }
-
   ngOnInit(): void {
     this.galleryOptions = [
       {
