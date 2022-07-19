@@ -29,7 +29,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/robots.txt",
+              "src/robot.txt",
               "src/CNAME",
               "src/sitemap.xml"
             ],
