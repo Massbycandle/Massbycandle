@@ -1,0 +1,232 @@
+{
+    "candles": [
+        {
+            "name": "Bawełna",
+            "description": "To świeca o zapachu czystej bawełny, jej głównymi nutami są między innymi: bergamotka puszysty jaśmin, biała róża, szczotkowana bawełna, cedr, wanilia, białe piżmo.",
+            "thumb": "assets/images/candles/bawelna/1Bawelna120-thumb.jpg",
+            "images": [
+                "assets/images/candles/bawelna/1Bawelna120.jpg",
+                "assets/images/candles/bawelna/1Bawelna180.jpg",
+                "assets/images/candles/bawelna/2Bawelna120.jpg",
+                "assets/images/candles/bawelna/2Bawelna180.jpg",
+                "assets/images/candles/bawelna/3Bawelna120.jpg",
+                "assets/images/candles/bawelna/3Bawelna180.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Bawełna",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-bawelna-120ml-11800482791"
+                },
+                {
+                    "smell": "Bawełna",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-bawelna-180ml-11800856620"
+                },
+                {
+                    "smell": "Bawełna",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-piernik-300ml-11893153635"
+                }
+            ]
+        },
+        {
+            "name": "Herbata",
+            "description": "To świeca o zapachu herbaty. Jej głównymi nutami są między innymi: liście zielonej herbaty, bergamotka, cytryna, gałka muszkatołowa, kardamon.",
+            "thumb": "assets/images/candles/herbata/1Herbata120-thumb.jpg",
+            "images": [
+                "assets/images/candles/herbata/1Herbata120.jpg",
+                "assets/images/candles/herbata/1Herbata180.jpg",
+                "assets/images/candles/herbata/2Herbata120.jpg",
+                "assets/images/candles/herbata/2Herbata180.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Herbata",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-herbata-120ml-11801110217"
+                },
+                {
+                    "smell": "Herbata",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-herbata-180ml-11801179623"
+                },
+                {
+                    "smell": "Herbata",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "name": "Lawenda",
+            "description": "To świeca o zapachu czystej lawendy, jej głównymi nutami są między innymi: liść eukaliptusa, dzika lawenda, paczula, piżmo.",
+            "thumb": "assets/images/candles/lawenda/1Lawenda120-thumb.jpg",
+            "images": [
+                "assets/images/candles/lawenda/1Lawenda120.jpg",
+                "assets/images/candles/lawenda/1Lawenda180.jpg",
+                "assets/images/candles/lawenda/1Lawenda300.jpg",
+                "assets/images/candles/lawenda/2Lawenda120.jpg",
+                "assets/images/candles/lawenda/2Lawenda180.jpg",
+                "assets/images/candles/lawenda/2Lawenda300.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Lawenda",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": ""
+                },
+                {
+                    "smell": "Lawenda",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-lawenda-180ml-11801597217"
+                },
+                {
+                    "smell": "Lawenda",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-lawenda-300ml-11801634066"
+                }
+            ]
+        },
+        {
+            "name": "Jabłko - Cynamon",
+            "description": "To świeca o zapachu jabłka z cynamonem, jej głównymi nutami są między innymi: pieczone jabłko, mielony cynamon, gałka muszkatołowa, kolendra, goździki, wanilia, karmelizowany cukier.",
+            "thumb": "assets/images/candles/jablko-cynamon/1JablkoCynamon120-thumb.jpg",
+            "images": [
+                "assets/images/candles/jablko-cynamon/1JablkoCynamon120.jpg",
+                "assets/images/candles/jablko-cynamon/1JablkoCynamon180.jpg",
+                "assets/images/candles/jablko-cynamon/1JablkoCynamon300.jpg",
+                "assets/images/candles/jablko-cynamon/2JablkoCynamon120.jpg",
+                "assets/images/candles/jablko-cynamon/2JablkoCynamon180.jpg",
+                "assets/images/candles/jablko-cynamon/2JablkoCynamon300.jpg",
+                "assets/images/candles/jablko-cynamon/3JablkoCynamon120.jpg",
+                "assets/images/candles/jablko-cynamon/3JablkoCynamon180.jpg",
+                "assets/images/candles/jablko-cynamon/3JablkoCynamon300.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Jabłko - Cynamon",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-jablko-cynamon-120ml-11801269440"
+                },
+                {
+                    "smell": "Jabłko - Cynamon",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-jablko-cynamon-180ml-11801359055"
+                },
+                {
+                    "smell": "Jabłko - Cynamon",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-jablko-cynamon-300ml-11801392782"
+                }
+            ]
+        },
+        {
+            "name": "Karmel",
+            "description": "To świeca o zapachu karmelowym, jej głównymi nutami są między innymi: słodki karmel, mleko, masło, cukier karmelizowany.",
+            "thumb": "assets/images/candles/karmel/1Karmel120-thumb.jpg",
+            "images": [
+                "assets/images/candles/karmel/1Karmel120.jpg",
+                "assets/images/candles/karmel/1Karmel180.jpg",
+                "assets/images/candles/karmel/1Karmel300.jpg",
+                "assets/images/candles/karmel/2Karmel120.jpg",
+                "assets/images/candles/karmel/2Karmel180.jpg",
+                "assets/images/candles/karmel/2Karmel300.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Karmel",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-karmel-120ml-11801444323"
+                },
+                {
+                    "smell": "Karmel",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-karmel-180ml-11801482569"
+                },
+                {
+                    "smell": "Karmel",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-karmel-300ml-11801529732"
+                }
+            ]
+        },
+        {
+            "name": "Piernik",
+            "description": "To świeca o zapachu piernika, jej głównymi nutami są między innymi: cynamon, goździki, miód, wanilia, gałka muszkatołowa, kardamon.",
+            "thumb": "assets/images/candles/piernik/1Piernik120-thumb.jpg",
+            "images": [
+                "assets/images/candles/piernik/1Piernik120.jpg",
+                "assets/images/candles/piernik/1Piernik180.jpg",
+                "assets/images/candles/piernik/1Piernik300.jpg",
+                "assets/images/candles/piernik/2Piernik120.jpg",
+                "assets/images/candles/piernik/2Piernik180.jpg",
+                "assets/images/candles/piernik/2Piernik300.jpg"
+            ],
+            "variants": [
+                {
+                    "smell": "Piernik",
+                    "volume": 120,
+                    "burning_time": 25,
+                    "candle_core": "bawełniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-piernik-120ml-11893165072"
+                },
+                {
+                    "smell": "Piernik",
+                    "volume": 180,
+                    "burning_time": 40,
+                    "candle_core": "drewniany",
+                    "link": "https://allegro.pl/oferta/massby-swieca-sojowa-piernik-180ml-11893159506"
+                },
+                {
+                    "smell": "Piernik",
+                    "volume": 300,
+                    "burning_time": 60,
+                    "candle_core": "drewniany",
+                    "link": ""
+                }
+            ]
+        }
+    ],
+    "gallery": [
+        "zdjecie1.jpg",
+        "zdjecie2.jpg",
+        "zdjecie3.jpg",
+        "zdjecie4.jpg",
+        "zdjecie5.jpg",
+        "zdjecie6.jpg",
+        "zdjecie7.jpg",
+        "zdjecie8.jpg",
+        "zdjecie9.jpg"
+    ]
+}
