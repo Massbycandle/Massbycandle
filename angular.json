@@ -29,6 +29,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
+              "src/logo.ico",
               "src/robots.txt",
               "src/CNAME",
               "src/sitemap.xml"
