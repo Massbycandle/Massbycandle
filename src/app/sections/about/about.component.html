@@ -1,10 +1,28 @@
-<app-title [titleText]="title" [secondaryText]="secondaryTitle"></app-title>
-<div class="about-content">
-    <div class="column left">
-        <img [src]="imageUrl" loading="lazy" [alt]="imageAlt">
+<div>
+    <app-title [titleText]="title" [secondaryText]="secondaryTitle"></app-title>
+    <div class="about-content">
+        <div class="column left">
+            <img [src]="imageUrl" loading="lazy" [alt]="imageAlt">
+        </div>
+        <div class="column right">
+            <div class="text">{{titleInnerHtml}}</div>
+            <ng-template class="content" appDynamicChildLoader></ng-template>
+        </div>
     </div>
-    <div class="column right">
-        <div class="text">{{titleInnerHtml}}</div>
-        <ng-template class="content" appDynamicChildLoader></ng-template>
+</div>
+<div *ngIf="contentComponentName === 'about-candles'" class="extra-content">
+    <app-title secondaryText="Spróbuj Sam"></app-title>
+    <div class="about-content">
+        <p class="text">
+            Przed zapaleniem świecy należy skrócić knot na długość ok. 0,5cm.<br>
+            Zawsze pal świecę aż do całkowitego roztopienia wierzchniej warstwy wosku do brzegu naczynia.<br>
+            Krótszy czas pierwszego palenia może spowodować powstanie tunelu i nierównomierne topienie się wosku.<br>
+            Przed każdym następnym paleniem świecy sojowej knot świecy należy skrócićo spaloną końcówkę.<br>
+            Nigdy nie przenoś palącej się świecy.<br>
+            Świecę najlepiej gasić odcinając jej dostęp powietrza.<br>
+            Czas palenia świecy powinien być nie dłuższy niż 4h.<br>
+            Nigdy nie zostawiaj zapalonej świecy bez nadzoru.<br>
+            Produkt powinien być przechowywany w temperaturze pokojowej.
+        </p>
     </div>
 </div>

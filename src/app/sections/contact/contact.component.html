@@ -2,14 +2,20 @@
 <div class="contact-content">
     <div class="contact-text">
         <p>
-            Szybki zakup kilku sztuk świec sojowych? Zajrzyj na allegro!
+            Szybki zakup kilku sztuk świec sojowych? Zajrzyj na Allegro lub Shopee!
         </p>
     </div>
     <div class="contact-icon clickable" (click)="openSite(allegroPage)">
         <p>
-            <fa-icon class="icon fa-3x" [icon]="faShop"></fa-icon>
+            <fa-icon class="icon fa-3x left-icon" [icon]="faShop"></fa-icon>
         </p>
-        <div class="text">@massby_candle</div>
+        <div class="text">allegro</div>
+    </div>
+    <div class="contact-icon clickable" (click)="openSite(shopeePage)">
+        <p>
+            <fa-icon class="icon fa-3x right-icon" [icon]="faShop"></fa-icon>
+        </p>
+        <div class="text">shopee</div>
     </div>
 </div>
 
@@ -21,13 +27,13 @@
     </div>
     <div class="contact-icon clickable" (click)="openSite(facebookPage)">
         <p>
-            <fa-icon class="icon fa-3x" [icon]="faFacebook"></fa-icon>
+            <fa-icon class="icon fa-3x left-icon" [icon]="faFacebook"></fa-icon>
         </p>
         <div class="text">@Massby - Świece Sojowe</div>
     </div>
     <div class="contact-icon clickable" (click)="openSite(instagramPage)">
         <p>
-            <fa-icon class="icon fa-3x" [icon]="faInstagram"></fa-icon>
+            <fa-icon class="icon fa-3x right-icon" [icon]="faInstagram"></fa-icon>
         </p>
         <div class="text">@massby_candle</div>
     </div>
@@ -41,13 +47,13 @@
     </div>
     <div class="contact-icon">
         <p>
-            <fa-icon class="icon fa-3x" [icon]="faPhone"></fa-icon>
+            <fa-icon class="icon fa-3x left-icon" [icon]="faPhone"></fa-icon>
         </p>
         <div class="text">+48 888-672-244</div>
     </div>
     <div class="contact-icon clickable" (click)="sendEmail()">
         <p>
-            <fa-icon class="icon fa-3x" [icon]="faEnvelope"></fa-icon>
+            <fa-icon class="icon fa-3x right-icon" [icon]="faEnvelope"></fa-icon>
         </p>
         <div class="text">massbycandle@gmail.com</div>
     </div>

@@ -19,6 +19,8 @@ export class ContactComponent {
   instagramPage = 'https://instagram.com/massby_candle?igshid=YmMyMTA2M2Y='
   facebookPage = 'https://www.facebook.com/massbycandle/'
   allegroPage = 'https://allegro.pl/uzytkownik/massby'
+  shopeePage = 'https://shopee.pl/massbycandle'
+
 
   openSite(siteUrl: string) {
     window.open(siteUrl, '_blank');
