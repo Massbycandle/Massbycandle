@@ -7,7 +7,7 @@
     align-items    : center;
     justify-content: center;
     margin-bottom  : 30px;
-    text-align: center;
+    text-align     : center;
 }
 
 .contact-text {
@@ -20,16 +20,6 @@
     display   : block;
     color     : $hover-color;
     text-align: center;
-}
-
-.right-icon {
-    text-align : left;
-    margin-left: 10px;
-}
-
-.left-icon {
-    text-align  : right;
-    margin-right: 10px;
 }
 
 .clickable:hover {
